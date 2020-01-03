@@ -1,19 +1,32 @@
+function mostra_risposta_sbagliata(p){
+	console.log("Risposta Sbagliata con p " + p);
+	document.getElementById(p).innerHTML = "ops..risposta errata";
+	document.getElementById(p).style.color = "red";
+	document.getElementById(p).style.fontSize = "30px";
+	document.getElementById("input").style.display = "block";
+}
+
+function mostra_risposta_giusta(p, a, ul, div){
+
+	document.getElementById(p).innerHTML = "Complimenti";
+	document.getElementById(p).style.color = "green";
+	document.getElementById(p).style.fontSize = "30px";
+    document.getElementById(a).style.display = "block";
+    document.getElementById(ul).style.display = "block";
+	document.getElementById(div).style.display = "block";
+
+}
+
 function città() {
-	var x = document.getElementById("casella1").value;
-	var y = "Città di Reykjavik";
-	if (x!=y) {
-		document.getElementById("p1").innerHTML = "ops..risposta errata";
-		document.getElementById("p1").style.color = "red";
-		document.getElementById("p1").style.fontSize = "30px";
-		document.getElementById("input").style.display = "block";
+	var x = document.getElementById("casella1").value.toLowerCase();
+	var y = "Città di Reykjavik".toLowerCase();
+	console.log("Risposta: " + x);
+	var risposta_breve = "c";
+	if (x!=y && x != risposta_breve ) {
+		mostra_risposta_sbagliata('p1');
     }
 	   else {
-		document.getElementById("p1").innerHTML = "Complimenti";
-	    document.getElementById("p1").style.color = "green";
-		document.getElementById("p1").style.fontSize = "30px";
-        document.getElementById("a1").style.display = "block";
-        document.getElementById("ul1").style.display = "block";
-		document.getElementById("div1").style.display = "block";	
+		mostra_risposta_giusta("p1", "a1", "ul1", "div1");
 	   }
 }
 
