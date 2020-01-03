@@ -1,0 +1,118 @@
+
+/* qui sono riportati tutti gli stili utilizzati per la realizzazione del sito web */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ccc;
+}
+
+.container {
+	margin: 0 auto; 
+	width: 1500px;
+	height: 500px;
+	background: #fff;
+}
+
+header {
+	width: inherit; 
+	height: 200px;
+	background: #2196F3;
+	color: #fff;
+	padding: 10px;
+}
+
+.content {
+	width: inherit;
+	height: 600px;
+	background: #fff;
+}
+
+.sidebar {
+	width: 18%;
+	height: 600px;
+	float: left;
+	background-image: url('barriera.jpg');
+	padding: 10px;
+}
+
+.main{
+	float: right;
+	width: 82%;
+	padding: 10px;
+}
+
+.main1 {
+	width: 1500px;
+	height: 600px;
+	padding: 20px;
+	background: #fff
+}	
+
+.footer {
+	width: inherit;
+	height: 100px;
+	background: url('wood.jpg');
+	clear: both;
+	padding: 10px;
+}
+
+.table {
+	float: right;
+}
+
+.td { 
+	padding-right: 30px;
+	/* si riferisce alla distanza tra
+	le caselle della tabella */
+}
+
+.fs {
+	font-size: 25px;
+}
+
+.h1 {
+	font-size: 60px;
+	/* si riferisce alla grandezza del titolo */
+}
+
+.p {
+	font-size: 30px;
+	margin-top: 20px;
+	/*si riferisce al pargrafo in cui viene
+	visualizzato il risultato della verifica*/
+}
+.sp {
+	text-align: justify;
+	width: 400px;
+    height: 200px;	
+	/* si riferisce all'impaginazione del paragrafo citato sopra sopra */
+}
+
+.a {
+	margin-top: 90px;
+	margin-right: 1125px; 
+	font-size: 20xp;
+	/* si riferisce ai link per la domanda successiva */
+}
+	
+.display {
+	display: none;
+}
+
+.white {
+	color: white;
+	/*si riferisce al colore del contenuto della sidebar*/
+}
+
+
+
+
+	
+	

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Curiosità</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="cont" class="container">
+    <header>
+	  <h1 class="h1">Curiosità Geografiche</h1>
+	  <h2><em>"Il tempo è come un fiume: non risale mai alla sorgente"</em></h2>
+	  <h2><em>(Conte di Rivarol)</em></h2>
+    </header> 
+    <div class="content">
+      <aside class="sidebar">
+	    <div id="ul5" class="display white">
+          <h1>Sii Curioso</h1>
+		  <p>per ulteriori informazioni visita i link in descrizione</p>
+		    <br>
+          <ul>
+            <li class="fs">
+			  ><a class="white" href="http://www.meteoweb.eu/2014/06/viaggio-acque-fiume-azzurro-culla-civilta-cinese-fonte-economia/293179/">Fiume Azzurro</a>
+			</li>
+		      <br>
+		    <li class="fs">
+			  ><a class="white" href="https://www.egittopercaso.net/nilo.html">Fiume Nilo</a>
+			</li>
+		      <br>
+		    <li class="fs">
+			  ><a class="white" href="https://siviaggia.it/idee-di-viaggio/viaggio-attraverso-lungo-fiume-mississippi/192852/">Fiume Missisipi</a>
+			</li>
+		  </ul>
+		</div>
+      </aside>
+	  <main class="main">
+	    <h1>Quinta Prova</h1>
+		  <br>
+		<p class="fs">Indica quale tra questi fiumi é il più lungo!</p>
+		<p>inserisci il nome nella casella sottostante</p>
+		  <br>
+		<input id="casella5" class="fs">
+        <button class="fs" onclick="fiume()">
+          Verifica
+        </button>
+		<table class="table">
+		  <tr>
+		    <td class="td">
+			  <img id="img1" src="./images/page5/azzurro.jpg" alt="Fiume Azzurro">
+			</td>
+		  	<td>
+			  <img id="img2" src="./images/page5/nilo.jpg" alt="Fiume Nilo">
+			</td>
+		  </tr>
+		  <tr>
+		    <td>
+			  <p>Fiume Azzurro</p>
+			</td>
+			<td>
+			  <p>Fiume Nilo</p>
+			</td>
+		  </tr>
+		  <tr>
+		    <td class="td">
+			  <img id="img3" src="./images/page5/rio.jpg" alt="Rio delle Amazzoni">
+			</td>
+		    <td>
+			  <img id="img4" src="./images/page5/missisipi.jpg" alt="Fiume Missisipi">
+			</td>
+		  </tr>
+		  <tr>
+		    <td>
+			  <p>Rio delle Amazzoni</p>
+			</td>
+			<td>
+			  <p>Fiume Missisipi</p>
+			</td>
+		  </tr>
+		</table>
+		<p id="p5" class="p"></p>
+		<input id="input" class="fs display" type="button" value="Ritenta" onclick="ritenta()">
+		  <br>
+		  <br>
+		<div id="div5" class="display">
+		  <h3>"Presentazione del fiume"</h3>
+		  <p class="sp">Il Rio delle Amazzoni è il fiume più grande del mondo 
+		  che nasce sulle montagne delle Ande e sfocia nell’Oceano Atlantico. 
+		  Il fiume attraversa gli stati di Guyana, Ecuador, Venezuela, Bolivia, 
+		  Brasile, Colombia e Perù, arrivando ad attraversare circa il 30% delle 
+		  terre del sud America. La lunghezza del fiume è di circa 6400 chilometri 
+		  ed ha una larghezza massima di 48 chilometri durante la stagione umida.
+		  Il Rio delle Amazzoni da solo rilascia il 20 per cento di acqua dolce del mondo 
+		  nell’oceano con una portata media di 209 mila metri cubi al secondo</p>
+		</div>
+		<button title="Termina" id="button" style="margin-top:75px" class="fs display" onclick="termina()">
+		  Termina il tentativo
+		</button>
+	  </main>
+	</div>
+	<footer class="footer white">
+	  <p>Creato da Bazzani Niccolò.</p>
+	  <p>Per info. e collaborazioni: +39 349/***/8188 o bazzani.niccolo@iticopernico.it</p>
+	</footer>
+  </div> 
+</body>
+</html>
