@@ -1,7 +1,9 @@
 function città() {
-	var x = document.getElementById("casella1").value;
-	var y = "Città di Reykjavik";
-	if (x!=y) {
+	var x = document.getElementById("casella1").value.toLowerCase();
+	var y = "Città di Reykjavik".toLowerCase();
+	console.log("Risposta: " + x);
+	var risposta_breve = "c";
+	if (x!=y && x != risposta_breve ) {
 		document.getElementById("p1").innerHTML = "ops..risposta errata";
 		document.getElementById("p1").style.color = "red";
 		document.getElementById("p1").style.fontSize = "30px";
